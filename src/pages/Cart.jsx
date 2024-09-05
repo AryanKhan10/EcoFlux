@@ -19,8 +19,8 @@ function Cart() {
   return (
     <div className=''>
       {cart.length>0 ? 
-      ( <div  className='flex max-w-6xl justify-center mt-20 gap-20'>
-          <div className='w-5/12 flex flex-col space-y-3'>
+      ( <div  className='flex flex-col items-center xs:items-start xs:flex-row max-w-6xl justify-center mt-20 gap-4 sm:gap-10 lg:gap-20'>
+          <div className='w-8/12 xs:w-5/12 flex flex-col space-y-3'>
             {cart.map((item) => <CartItems key={item.id} item={item}/>)}
           </div>
           <div className='h-screen ml-10'>

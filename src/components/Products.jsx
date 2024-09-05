@@ -22,7 +22,7 @@ function Products({post}) {
     // const titl=post.title.substring(0,17)+"..."
     // const des=post.description.substring(0,50)+"..."
   return (
-    <div className='flex flex-col justify-between  border-[1px] rounded-md py-4 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]
+    <div className='flex flex-col max-w-80 sm:w-full justify-between  border-[1px] rounded-md py-4 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]
                     transition-all ease-in-out duration-200 delay-100 hover:scale-105'>
       <div className='font-bold truncate w-full px-10'>
         {post.title}

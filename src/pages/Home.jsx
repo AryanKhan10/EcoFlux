@@ -30,7 +30,7 @@ function Home() {
     {
       loading ? (
         <Spinner />
-      ) : posts.length > 0 ? (<div className="grid grid-cols-4  max-w-6xl gap-4  mt-5 w-9/12 mx-auto ">
+      ) : posts.length > 0 ? (<div className="grid justify-center xs:grid-cols-2 xs:w-[92%] xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 sm:max-w-7xl sm:w-10/12 md:w-8/12 md:max-w-6xl lg:w-9/12 gap-4  mt-5 xl:w-10/12 mx-auto ">
                                {posts.map((post) => (  
                               <Products key={post.id} post={post} />
         ))}

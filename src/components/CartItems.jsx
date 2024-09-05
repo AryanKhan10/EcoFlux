@@ -15,9 +15,9 @@ function CartItems({item}) {
   }
 
   return (
-    <div className='grid grid-cols-2 border-b-2 border-gray-800 py-3'>
-      <div className='w-full h-[200px]'>
-        <img src={item.image} className='h-full' alt="" />
+    <div className='lg:grid grid-cols-2 border-b-2 border-gray-800 py-3 mx-5 lg:mx-0'>
+      <div className='w-full h-[200px] mx-auto'>
+        <img src={item.image} className='h-full mx-auto lg:mx-0' alt="" />
       </div>
       <div>
         <p className='font-bold truncate w-full py-2'>{item.title}</p>
